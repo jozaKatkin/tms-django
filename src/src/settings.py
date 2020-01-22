@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cw22_test',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,10 @@ ROOT_URLCONF = 'src.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            'templates',
+            'cw22_test/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
